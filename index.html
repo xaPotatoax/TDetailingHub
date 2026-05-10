@@ -31,22 +31,24 @@
     .button-row {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
+      flex-wrap: nowrap; /* keep them in one line */
     }
     img.logo {
-      width: 200px;  /* auto reduce to pixel size */
+      width: 200px;   /* auto reduce to pixel size */
       height: auto;
+      display: block;
+      margin: 0 auto 20px auto;
     }
   </style>
 </head>
 <body>
-  <!-- Logo with auto pixel sizing -->
+  <!-- Logo -->
   <img src="logo.jpg" alt="T Detailing Logo" class="logo">
 
   <!-- Heading -->
   <h1 style="color:#B22222;">Connect with T Detailing</h1>
 
-  <!-- Buttons in a row -->
+  <!-- Buttons in a single row -->
   <div class="button-row">
     <a href="https://www.instagram.com/tdetailing_official/?utm_source=ig_web_button_share_sheet" class="btn bronze">Instagram</a>
     <a href="https://facebook.com/yourpage" class="btn silver">Facebook (coming soon)</a>
